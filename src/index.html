@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="nav-top">
+                <h2 class="brand">Brand</h2>
+                <div class="hambuger">hambuger
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <input type="text" name="query" class="query">
+               <button class="search">Search</button>
+               
+            </div>
+        </nav>
+        <section class="banner">
+            <div class="banner-text">
+                <h1 class="banner-text-title">Recipe Apps</h1>
+                <p class="banner-text-content">You Can Cook</p>
+            </div>
+        </section>
+    </header>
+    <!-- body  -->
+    <section class="body-container">
+        <div class="result-container">
+            <h1 class="result-heading">Results</h1>
+            <div class="result-recipes">
+                <ul class="result-list">
+                    <!-- <li>
+                         <a href="#4476" class="result-recipe-item" >
+                             <div class="result-recipe-item-img">
+                                 <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="recipe item image">
+                             </div>                            
+                            <h4 class="result-recipe-item-title">Pizza with Blended with Potato</h4>
+                         </a>
+                    </li>                -->
+                </ul>
+                
+            </div>
+            <div class="navigation">
+                <button class="navigation-btn" data-page="1">1</button>
+                <button class="navigation-btn" data-page="2">2</button>
+                <button class="navigation-btn" data-page="3">3</button>
+            </div>
+        </div>
+        <div class="recipe-container">
+           <!-- icon controller -->
+            <div class="icon-controller">
+                <button class="icon-like-list">
+                    <ion-icon name="heart"></ion-icon>
+                </button>
+                <button class="close-hambuger">
+                    <div class="hamburger-line first-line"></div>
+                    <div class="hamburger-line second-line"></div>
+                    <div class="hamburger-line third-line"></div>
+                </button>                  
+            </div>
+
+            <!-- position like list panel later -->
+            <div class="like-list-panel">
+                <ul class="like-list">
+                    <li>
+                        <a href="#4476" class="like-list-item">
+                           <div class="like-list-item-img">
+                               <img src="" alt="like list image">
+                           </div>
+                           <div class="like-list-info">
+                               <h3 class="like-list-item-title">Pizza with Potato Sauce</h3>
+                               <p class="like-list-item-author">Teddy Mark</p> 
+                           </div>                            
+                        </a>
+                    </li>
+                </ul>
+            </div>          
+
+            <!-- recipe picture -->
+            <div class="recipe-visual">
+                <div class="recipe-visual-image">
+                    <img src="" alt="recipe image">
+                </div>
+                <h2 class="recipe-visual-title">Pizza with Tomato Sauce</h2>
+            </div> 
+
+          <!-- recipe data -->
+            <div class="recipe-data">
+               
+                    <div class="recipe-time">
+                        <span class="icon-time">
+                                <ion-icon name="alarm"></ion-icon>
+                        </span>
+                        <div class="recipe-time-info">
+                            <span class="recipe-time-num">30</span>
+                            <span class="recipe-time-min">Mins</span>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="recipe-serving">
+                        <span class="icon-serving">
+                                <ion-icon name="man"></ion-icon>
+                        </span>
+                        <div class="recipe-serving-info">
+                            <span class="recipe-serving-num">4</span>
+                            <span class="recipe-serving-people">People</span>
+                        </div>
+                        <div class="recipe-serving-btn">
+                            <button class="serving-btn-increase"><ion-icon name="add"></ion-icon></button>
+                            <button class="serving-btn-descrease"><ion-icon name="remove"></ion-icon></button>
+                        </div>
+                    </div>
+                    
+                    <div class="like-heart">
+                            <ion-icon name="heart-empty"></ion-icon>
+                    </div>
+                </div>
+            
+            <!-- recipe ingredients -->
+            <ul class="recipe-ingredient-list">
+                <li>
+                    <span class="recipe-ingredient-num">3</span>
+                    <span class="recipe-ingredient-unit">cups</span>
+                    <span class="recipe-ingredient-string">Chesse</span>
+                </li>
+                <li>
+                    <span class="recipe-ingredient-num">3</span>
+                    <span class="recipe-ingredient-unit">cups</span>
+                    <span class="recipe-ingredient-string">Chesse</span>
+                </li>
+                <li>
+                    <span class="recipe-ingredient-num">3</span>
+                    <span class="recipe-ingredient-unit">cups</span>
+                    <span class="recipe-ingredient-string">Chesse</span>
+                </li>
+                <li>
+                        <span class="recipe-ingredient-num">3</span>
+                        <span class="recipe-ingredient-unit">cups</span>
+                        <span class="recipe-ingredient-string">Chesse</span>
+                 </li>
+            </ul>
+
+            <!-- recipe direction -->
+            <div class="recipe-direction">
+                <h2 class="recipe-direction-heading">How To Cook It</h2>
+                <p class="recipe-direction-text">
+                    This recipe is made by <span class="direction-author">Teddy</span>
+                </p>
+                <a href="https://www.google.com/" class="btn-direction" target="_blank">
+                    <span class="btn-direction-text">Direction</span>
+                    <span class="btn-direction-icon">
+                            <ion-icon name="arrow-dropright"></ion-icon>
+                    </span>
+                </a>               
+            </div>
+           
+
+
+            
+        </div>
+    </section>
+
+    <footer class="footer">Footer And Power by Me</footer>
+    
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script> 
+    
+</body>
+</html>
