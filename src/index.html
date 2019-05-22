@@ -23,11 +23,11 @@
                     <div class="bar-3"></div>
                 </div>
             </div>
-            <div class="nav-bottom">
+            <form class="nav-bottom">
                 <input type="text" name="query" class="query">
-               <button class="search">Search</button>
+               <button type="submit" class="search">Search</button>
                
-            </div>
+            </form>
         </nav>
         <section class="banner">
             <div class="banner-text">
@@ -52,12 +52,17 @@
                     </li>                -->
                 </ul>
                 
-            </div>
-            <div class="navigation">
-                <button class="navigation-btn" data-page="1">1</button>
-                <button class="navigation-btn" data-page="2">2</button>
-                <button class="navigation-btn" data-page="3">3</button>
-            </div>
+            </div>            
+          
+            <!-- pagination -->
+            <!-- <div class="content_detail__pagination cdp" actpage="1">
+                    <a data-page="#!-1" class="cdp_i">prev</a>
+                    <a data-page="#!1" class="cdp_i">1</a>
+                    <a data-page="#!2" class="cdp_i">2</a>
+                    <a data-page="#!3" class="cdp_i">3</a>			
+                    <a data-page="#!+1" class="cdp_i">next</a>
+            </div> -->
+           
         </div>
         <div class="recipe-container">
            <!-- icon controller -->
@@ -177,6 +182,7 @@
     <footer class="footer">Footer And Power by Me</footer>
     
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script> 
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     
 </body>
 </html>
