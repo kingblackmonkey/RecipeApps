@@ -149,7 +149,7 @@ export let  displayRecipe= (recipe)=>{
     // display servings and amount on user interface
     
 
-    console.log(ingredients);
+    // console.log(ingredients);
     document.querySelector('.recipe-serving-num').innerHTML = servings;
     ingredientNumContainer =  Array.from(document.querySelectorAll('.recipe-ingredient-num')) ;
     ingredientNumContainer.forEach((item,index)=>{
