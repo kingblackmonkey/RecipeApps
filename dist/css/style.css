@@ -7,6 +7,15 @@
    
 }
 
+:root {
+  --mint:#42f2f7;
+  --black: #0c0f0a;
+  --pink: #ff206e;
+  --yellow:#fbff12;
+  --white:#fdfdff;
+
+}
+
 body{
    position: relative;
 }
@@ -16,6 +25,40 @@ body{
    background: linear-gradient(to bottom, rgba(0,0,0,.6), transparent 100%),
 				url(.././img/food.jpg) center/cover no-repeat fixed;
 }
+
+/* =======================buttons style======================== */
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-search{
+  background: #4AC29A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    border-radius: 10rem;
+    text-transform: uppercase;
+    color: #fff;
+    
+    padding: 1rem 2rem;
+  }
+
+  .serving-btn, .icon-like-list, .like-heart-btn{
+    
+    background: var(--mint);
+    border-radius: 50%;
+    padding: .4rem .4rem .1rem .4rem;
+    color:white;
+    font-size: 1.3rem;
+  }
+
+
+
+/* ===================================== */
+
 
 /* .recipe-container{
    position: absolute;
