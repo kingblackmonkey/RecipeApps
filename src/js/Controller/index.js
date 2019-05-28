@@ -91,7 +91,8 @@ if (evt.target.matches('.serving-btn, .serving-btn *') ){
     console.dir(servingButton.dataset.type);
     // update serving ; defualt serving is 4;
     data.recipe.servings = data.recipe.getServings(servingButton.dataset.type, data.recipe.servings)
+   
     // update amount based on  updated servings and display uppdated serving and updated amount on user interface
-    recipeView.updateAmountForServings(data.recipe.ingredients, data.recipe.servings);
+      recipeView.updateAmountForServings(data.recipe.ingredients, data.recipe.servings);
 }
 })

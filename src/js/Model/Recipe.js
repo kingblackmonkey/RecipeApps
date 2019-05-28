@@ -33,10 +33,11 @@ async getRecipe(){
 }
 //get servings 
 getServings( type='', people = 4){
-    
-    if (type === 'inc') {
+    // only increase to 50 people max
+    if (type === 'inc'&& people < 50) {
       people++  
-    }else if(type === 'des'){
+    //   only decrease to 1 minimum 
+    }else if(type === 'des' && people > 1){
         people--
     }else{
         people = people
