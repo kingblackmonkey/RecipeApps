@@ -92,6 +92,11 @@ img{
    
 }
 
+.like-list-item-img img{
+  width: 50px;
+
+}
+
 /* result list style */
 .result-recipe-item-img{
    width: 7.5rem;

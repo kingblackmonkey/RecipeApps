@@ -5,4 +5,5 @@ export let elements ={
     resultList: document.querySelector('.result-list'),
     recipeResult: document.querySelector('.recipe-result'),
     recipeContainer:document.querySelector('.recipe-container'),
+    likedListContainer: document.querySelector('.like-list'),
 }

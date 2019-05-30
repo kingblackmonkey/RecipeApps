@@ -137,9 +137,9 @@ export let  displayRecipe= (recipe)=>{
     let ingredientNumContainer ='';
     //update amount and fractionalize it
     ingredients = ingredients.map((ingredient)=>{
-        if(ingredient.amount){
+        if(ingredient.amount){            
         
-           amount = eval(ingredient.amount) * ratio;
+           amount = eval(ingredient.amount.replace(' ','+')) * ratio;
             //    console.log(amount)
            amount = fractionalize(amount);
         }
