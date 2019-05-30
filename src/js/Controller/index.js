@@ -17,7 +17,7 @@ window.data = data;
 //event handler for search button
 let  search = async (evt)=>{
 // prevent button default from submitting and reloading the page in the form
-event.preventDefault();
+evt.preventDefault();
  try{
            //get query from user 
   let query = searchView.getQuery();
