@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+window.axios = axios;
 export default class Search{
     constructor(query){
         this.query = query;

@@ -1,7 +1,23 @@
 import Fraction from 'fraction.js'
 import {elements} from '../base'
+import $ from "jquery"
+
+// because this html structure does not work with liked heart button when hover
+// just use jquery instead
 
 
+$(".icon-like-list").hover(()=>{
+    $('.like-list-panel').css({visibility: 'visible', opacity: 1});
+    }, ()=>{
+    $('.like-list-panel').css({visibility: 'hidden', opacity: 0});
+  });
+// make sure panel is visible when users hover the liked list panel
+  $('.like-list-panel').hover(function(){
+    $(this).css({visibility: 'visible', opacity: 1});
+  },   
+  function(){
+    $(this).css({visibility: 'hidden', opacity: 0});
+  } ) ; 
 
 
 export let getId = ()=>{
@@ -33,6 +49,7 @@ let makeIngredientList = (ingredients)=>{
    ingredients =  ingredients.map((ingredient)=>{
         return `
         <li>
+        <span class="recipe-ingredient-icon"><ion-icon name="arrow-dropright"></ion-icon></span>
             <span class="recipe-ingredient-num">${ingredient.amount}</span>
             <span class="recipe-ingredient-unit">${ingredient.unit}</span>
             <span class="recipe-ingredient-string">${ingredient.stringIngredient}</span>
@@ -112,7 +129,7 @@ export let  displayRecipe= (recipe)=>{
         <p class="recipe-direction-text">
             This recipe is made by <span class="direction-author">${recipe.author}</span>
         </p>
-        <a href="${recipe.author_url}" class="btn-direction" target="_blank">
+        <a href="${recipe.source_url}" class="btn-direction" target="_blank">
             <span class="btn-direction-text">Direction</span>
             <span class="btn-direction-icon">
                     <ion-icon name="arrow-dropright"></ion-icon>
@@ -155,5 +172,19 @@ export let  displayRecipe= (recipe)=>{
     ingredientNumContainer.forEach((item,index)=>{
         item.innerHTML = ingredients[index];
     })
+}
+
+// add class active to recipe container to take up whole viewport
+export let activeViewport = ()=>{
+
+    elements.recipeContainer.classList.add('active');
+    elements.resultContainer.style.display = "none";
+    $('html, body').animate({scrollTop:0}, 'slow');
+    document.querySelector('.close-hambuger').addEventListener('click', ()=>{
+        elements.recipeContainer.classList.remove('active');
+        elements.resultContainer.style.display = "block";
+      
+        
+    });
 }
 
