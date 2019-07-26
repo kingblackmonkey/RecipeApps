@@ -165,13 +165,9 @@ button{
 .result-recipe-item-img {
   margin: auto;
   position: relative;
-
+;
   
   
-}
-
-.result-recipe-item-img img{
-
 }
 
 .result-recipe-item-img::before,.recipe-visual::before {
@@ -216,29 +212,17 @@ h4.result-recipe-item-title{
 /* -----------------individual recipe style */
 
 /* recipe big container  */
-
-.recipe-container {
- display:none;
-  opacity: 0; 
-
-}
-
-
-.active{
+.recipe-container{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: block; 
-  opacity: 1; 
-  background: #fff; 
-  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
 }
 
 /*end  recipe big container  */
-
-
 
 
 
@@ -264,11 +248,6 @@ h4.result-recipe-item-title{
     opacity: 0;
     transition: all .5s .2s;
     border-radius: .5rem;
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    z-index: 9;
-    min-height: 5rem;
   }
 
   .icon-like-list{
@@ -494,6 +473,16 @@ h4.result-recipe-item-title{
 
 
 
+/* .recipe-container{
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: white;
+   opacity: 1;
+
+} */
 
 
 
@@ -698,13 +687,11 @@ h4.result-recipe-item-title{
    } 
 
 .result-container{
-  display: block !important;
   flex: 1 0 0;
 }
 
 .recipe-container{
   flex: 2 0 0;
-  background: transparent;
 }
 
 /* ---------nav style */
@@ -761,13 +748,8 @@ h4.result-recipe-item-title{
    flex: 0 0 2.7rem;
    height: 3rem;
    transform: scale(1.4);   
-   width: 3rem;
    margin: 0;
    
-}
-
-.result-recipe-item-img img{
- transform: scale(2);
 }
 
 
@@ -801,7 +783,6 @@ h4.result-recipe-item-title{
   position: absolute;
   right: 0;
   top: 65px;
-  min-height: 80px;
   width: 70%;
   z-index: 9999;
   transition: all 1s ease;

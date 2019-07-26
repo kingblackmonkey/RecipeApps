@@ -1,4 +1,6 @@
 let path = require('path');
+
+
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: ['@babel/polyfill', './src/js/Controller/index.js'],
@@ -26,11 +28,9 @@ module.exports = {
 
 					test: /\.js$/,
 					exclude: /node_modules/,
-					use: {
+					use: 'babel-loader'
 
-						loader: 'babel-loader'
-
-						}	
+							
 				}
 			]
 		}

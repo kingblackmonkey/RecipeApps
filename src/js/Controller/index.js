@@ -72,7 +72,8 @@ let recipe = async()=>{
     data.recipe.manipulateIngredients();
    
     // display recipe result into user interface    
-    recipeView.displayRecipe(data.recipe);    
+    recipeView.displayRecipe(data.recipe);  
+    recipeView.activeViewport();
   }
 
       // get like list array from local storage and store it back to like list model
@@ -81,8 +82,7 @@ let recipe = async()=>{
     if(JSON.parse(localStorage.getItem('likes')).length){
     
       data.likedList.likeList =  JSON.parse(localStorage.getItem('likes')) ;
-      //put liked recipes back to likelist panel
-      //bug right here cause it display  same item from like list every time  the hash changes
+      //put liked recipes back to likelist panel  
     
         likedListView.displayLikedList(data.likedList.likeList);
         //check if current hash matching any id in like list and toggle like heart button for liked list
@@ -151,3 +151,6 @@ elements.recipeContainer.addEventListener('click',(evt)=>{
 
 
 })
+
+
+
