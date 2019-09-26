@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- <nav class="nav-bar">
+            <div class="nav-top">
+                <h2 class="brand">Brand</h2>
+                <div class="hambuger">hambuger
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+            <form class="nav-bottom">
+                <input type="text" name="query" class="query">
+               <button type="submit" class="search btn-search">Search</button>
+               
+            </form>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-md navbar-light  justify-content-between align-items-center  ">
+            <a class="navbar-brand text-capitalize " href="#">
+                <img src="./img/logo.png" alt=""></a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger-line first-line"></div>
+                    <div class="hamburger-line second-line"></div>
+                    <div class="hamburger-line third-line"></div>
+            </button>          
+           <div class="collapse navbar-collapse col-md-8" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0  nav-form pt-3 ">
+                <input class="form-control mr-sm-2 query w-50 " type="search" placeholder="Enter a Name of Food to Search for Recipes" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0  search btn-search " type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+
+        <section class="banner py-4 ">
+            <div class="banner-text text-center  text-capitalize text-white ">
+                <h1 class="banner-text-title ">Recipe WebApps</h1>
+                <p class="banner-text-content pt-3">You Can Cook</p>
+            </div>
+        </section>
+    </header>
+    <!-- body  -->
+    <main class="body-container">
+        <div class="result-container">
+            <h1 class="result-heading ">Results</h1>
+            <div class="result-recipes">
+                <ul class="result-list text-center">
+                    <!-- <li>
+                         <a href="#4476" class="result-recipe-item" >
+                             <div class="result-recipe-item-img">
+                                 <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="recipe item image">
+                             </div>                            
+                            <h4 class="result-recipe-item-title">Pizza with Blended with Potato</h4>
+                         </a>
+                    </li>               
+
+                    <li>
+                         <a href="#4476" class="result-recipe-item" >
+                             <div class="result-recipe-item-img">
+                                 <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="recipe item image">
+                             </div>                            
+                            <h4 class="result-recipe-item-title">Pizza with Blended with Potato</h4>
+                         </a>
+                    </li>               
+                    <li>
+                        <a href="#4476" class="result-recipe-item" >
+                            <div class="result-recipe-item-img">
+                                <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="recipe item image">
+                            </div>                            
+                           <h4 class="result-recipe-item-title">Pizza with Blended with Potato</h4>
+                        </a>
+                   </li>     
+                   <li>
+                    <a href="#4476" class="result-recipe-item" >
+                        <div class="result-recipe-item-img">
+                            <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="recipe item image">
+                        </div>                            
+                       <h4 class="result-recipe-item-title">Pizza with Blended with Potato</h4>
+                    </a>
+                    </li>     
+                    <li>
+                        <a href="#4476" class="result-recipe-item" >
+                            <div class="result-recipe-item-img">
+                                <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="recipe item image">
+                            </div>                            
+                        <h4 class="result-recipe-item-title">Pizza with Blended with Potato</h4>
+                        </a>
+                    </li>      -->
+
+
+
+
+                </ul>
+                
+            </div>            
+          
+            <!-- pagination -->
+            <!-- <div class="content_detail__pagination cdp" actpage="1">
+                    <a data-page="#!-1" class="cdp_i">prev</a>
+                    <a data-page="#!1" class="cdp_i">1</a>
+                    <a data-page="#!2" class="cdp_i">2</a>
+                    <a data-page="#!3" class="cdp_i">3</a>			
+                    <a data-page="#!+1" class="cdp_i">next</a>
+            </div> -->
+           
+        </div>
+        <div class="recipe-container">
+           <!-- icon controller -->
+            <div class="icon-controller">
+                <button class="icon-like-list">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </button>
+                <button class="close-hambuger">
+                    <div class="hamburger-line first-line"></div>
+                    <div class="hamburger-line second-line"></div>
+                    <div class="hamburger-line third-line"></div>
+                </button>                  
+            </div>
+
+            <!-- position like list panel later -->
+            <div class="like-list-panel">
+                <ul class="like-list">
+                    <!-- <li >
+                        <a href="#4476" class="like-list-item ">
+                           <div class="like-list-item-img  ">
+                               <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="like list image">
+                           </div>
+                           <div class="like-list-info ">
+                               <h3 class="like-list-item-title">Pizza with Potato Sauce</h3>
+                               <p class="like-list-item-author">Teddy Mark</p> 
+                           </div>                            
+                        </a>
+                    </li>
+                    <li >
+                            <a href="#4476" class="like-list-item ">
+                               <div class="like-list-item-img  ">
+                                   <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="like list image">
+                               </div>
+                               <div class="like-list-info ">
+                                   <h3 class="like-list-item-title">Pizza with Potato Sauce</h3>
+                                   <p class="like-list-item-author">Teddy Mark</p> 
+                               </div>                            
+                            </a>
+                        </li> -->
+                    
+                </ul>
+            </div> 
+            <div class="recipe-result">
+                 <!-- recipe picture -->
+            <!-- <div class="recipe-visual">
+                <div class="recipe-visual-image">
+                    <img src="http://static.food2fork.com/best_pizza_dough_recipe1b20.jpg" alt="recipe image">
+                </div>
+                <h2 class="recipe-visual-title">Pizza with Tomato Sauce</h2>
+            </div>  -->
+
+          <!-- recipe data -->
+             <!-- <div class="recipe-data">
+               
+                    <div class="recipe-time">
+                        <span class="icon-time">
+                                <ion-icon name="alarm" class="icon-time"></ion-icon>
+                        </span>
+                        <div class="recipe-time-info">
+                            <span class="recipe-time-num">30</span>
+                            <span class="recipe-time-min">Mins</span>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="recipe-serving">
+                        <span class="icon-serving">
+                                <ion-icon name="man"></ion-icon>
+                        </span>
+                        <div class="recipe-serving-info">
+                            <span class="recipe-serving-num">4</span>
+                            <span class="recipe-serving-people">People</span>
+                        </div>
+                        <div class="recipe-serving-btn">
+                            <button class="serving-btn  serving-btn-increase" data-type="inc" ><ion-icon name="add"></ion-icon></button>
+                            <button class="serving-btn serving-btn-descrease" data-type="des"  ><ion-icon name="remove"></ion-icon></button>
+                        </div>
+                    </div>
+                    
+                    <div class="like-heart">
+                        <button class="like-heart-btn">
+                            <ion-icon name="heart-empty"></ion-icon>
+                        </button>
+                    </div>
+            </div>  -->
+            
+            <!-- recipe ingredients -->
+            <!-- <ul class="recipe-ingredient-list">
+                <li>
+                    <span class="recipe-ingredient-icon"><ion-icon name="arrow-dropright"></ion-icon></span>
+                    <span class="recipe-ingredient-num">3</span>
+                    <span class="recipe-ingredient-unit">cups</span>
+                    <span class="recipe-ingredient-string"> unbleached high-gluten, bread, or all-purpose flour, chilled </span>
+                </li>
+                <li>
+                        <span class="recipe-ingredient-icon"><ion-icon name="arrow-dropright"></ion-icon></span>
+                        <span class="recipe-ingredient-num">3</span>
+                        <span class="recipe-ingredient-unit">cups</span>
+                        <span class="recipe-ingredient-string">chesse</span>
+                    </li>
+                    <li>
+                            <span class="recipe-ingredient-icon"><ion-icon name="arrow-dropright"></ion-icon></span>
+                            <span class="recipe-ingredient-num">3</span>
+                            <span class="recipe-ingredient-unit">cups</span>
+                            <span class="recipe-ingredient-string">semolina flour or cornmeal for dusting</span>
+                        </li>
+                        <li>
+                                <span class="recipe-ingredient-icon"><ion-icon name="arrow-dropright"></ion-icon></span>
+                                <span class="recipe-ingredient-num">3</span>
+                                <span class="recipe-ingredient-unit">cups</span>
+                                <span class="recipe-ingredient-string">chesse with many</span>
+                            </li>
+             
+            </ul> -->
+
+            <!-- recipe direction -->
+            <!-- <div class="recipe-direction">
+                <h2 class="recipe-direction-heading">How To Cook It</h2>
+                <p class="recipe-direction-text">
+                    This recipe is made by <span class="direction-author">Original Author</span>
+                    Hope you can enjoy and check out recipe instruction at their website 
+                       
+                </p>
+                <a href="https://www.google.com/" class="btn-direction" target="_blank">
+                    <span class="btn-direction-text">Direction</span>
+                    <span class="btn-direction-icon">
+                            <ion-icon name="arrow-dropright"></ion-icon>
+                    </span>
+                </a>               
+            </div> -->
+           
+            </div>         
+
+           
+
+
+            
+        </div>
+    </main>
+
+    <footer class="footer text-center">© 2016 Copyright</footer>
+    
+
+  
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script> 
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
