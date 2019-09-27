@@ -1,5 +1,6 @@
 html{
   font-size: 95%;
+
 }
 
 *{
@@ -7,7 +8,7 @@ html{
    list-style: none;
    padding: 0;
    margin: 0;
-   
+   box-sizing: border-box !important;
  
    
 }
@@ -28,14 +29,28 @@ body{
    background: var(--white);
    font-family: 'Nunito', sans-serif;
    color: var(--black);
+  
+
 }
 
+body, html { overflow-x:hidden !important; height: 100vh !important }
+
+img{
+  display: block !important;
+  width: 100% !important;
+  margin: 0 auto;
+}
 
 .body-container{
   width: 95%;
   margin: auto;
+
 }
 
+.header-wrapper, .body-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 a{
   text-decoration: none !important;
@@ -91,6 +106,7 @@ button{
    min-height: 30vh;
    background: linear-gradient(to bottom, rgba(0,0,0,.8), transparent 150%),
         url(.././img/food.jpg) center/cover no-repeat fixed;
+
     
 }
 
@@ -308,9 +324,11 @@ h4.result-recipe-item-title{
 /* -- recipe visual style */
 .recipe-visual{
   position: relative;
- 
-}
 
+}
+.recipe-visual-image img{
+  padding: 5rem;
+}
 
 .recipe-visual-title{
   position: absolute;
@@ -700,11 +718,13 @@ h4.result-recipe-item-title{
 .result-container{
   display: block !important;
   flex: 1 0 0;
+ 
 }
 
 .recipe-container{
   flex: 2 0 0;
   background: transparent;
+
 }
 
 /* ---------nav style */
@@ -797,6 +817,8 @@ h4.result-recipe-item-title{
 
 }
 
+
+
 .like-list-panel{
   position: absolute;
   right: 0;
@@ -826,10 +848,14 @@ h4.result-recipe-item-title{
 
 
 /* recipe visual style */
+.recipe-visual-image img{
+  padding: 10rem;
+}
+
 .recipe-visual-title{
   width: 75%;
-  padding-top: 2.5rem;
-  padding: 2.5rem;
+  
+  
 }
 /* end recipe visual style */
 
@@ -870,6 +896,9 @@ h4.result-recipe-item-title{
 /* end recipe direction style */
 
 }
+
+
+
 
 /* end wider screen style */
 
